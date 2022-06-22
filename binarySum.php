@@ -1,6 +1,6 @@
 <?php
 
-function binarySum (string $a, string $b): string 
+function binarySum(string $a, string $b): string 
 {
     $ai = bindec($a);
     $bi = bindec($b);
