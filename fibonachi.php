@@ -1,10 +1,9 @@
 <?php
 
-$fibonachi = [0, 1];
 function fib(int $n): int
 {
-    global $fibonachi;
-    if($n >= count($fibonachi)) {
+    static $fibonachi = [0, 1];
+    if ($n >= count($fibonachi)) {
         $fibonachi[$n] = fib($n - 1) + fib($n - 2);
     }
     return $fibonachi[$n];
@@ -12,6 +11,6 @@ function fib(int $n): int
 
 // Test
 // More then 92 - result in Fatal error due to int overflow
-for ($i = 0; $i <=92 ; $i++) {
-    echo "i = ", $i, " fib($i) = ", fib($i) , PHP_EOL;
+for ($i = 0; $i <= 92; $i++) {
+    echo "i = ", $i, " fib($i) = ", fib($i), PHP_EOL;
 }
