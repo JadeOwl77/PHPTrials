@@ -18,8 +18,6 @@ function isBalanced(string $str): bool
     } elseif (strpos($str, ')') === 0) {
         return false;
     }
-    // $count = 1;
-    // return isBalanced(str_replace('()', '', $str, $count));
     return isBalanced(str_replace('()', '', $str));
 }
 

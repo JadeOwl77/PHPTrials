@@ -18,5 +18,4 @@ $arr = [6, 28, 496, 8128, 33550336, 25, 26, 500];
 $count = count($arr);
 for ($i = 1; $i < $count; $i++) {
     echo "Is $arr[$i] perfect? ", isPerfect($arr[$i]) ? 'true' : 'false', PHP_EOL;
-    // isPerfect($i);
 }
