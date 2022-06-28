@@ -3,21 +3,24 @@
 function isBalanced(string $str): bool
 {
     $len = strlen($str);
+    if ($len === 0) {
+        return true;
+    } 
+    if ($len === 1) {
+        return false;
+    }
     if (($len % 2) > 0) {
         // Not even number of brackets
         return false;
     } 
     $closeBracketPos = strpos($str, ')');
     $openBracketPos = strpos($str, '(');
-    if ($len === 0) {
-        return true;
-    } elseif ($len === 1) {
-        return false;
-    } elseif (($closeBracketPos === false) || ($openBracketPos === false)) {
-        return false;
-    } elseif (strpos($str, ')') === 0) {
+    if ($closeBracketPos === 0) {
         return false;
     }
+    if (($closeBracketPos === false) || ($openBracketPos === false)) {
+        return false;
+    } 
     return isBalanced(str_replace('()', '', $str));
 }
 
