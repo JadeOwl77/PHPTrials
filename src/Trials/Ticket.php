@@ -1,6 +1,8 @@
 <?php
 
-class TicketClass
+namespace Classes\Trials;
+
+class Ticket
 {
     private function digitsSum(string $number): int
     {

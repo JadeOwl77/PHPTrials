@@ -1,6 +1,8 @@
 <?php
 
-class FizzBuzzClass
+namespace Classes\Trials;
+
+class FizzBuzz
 {
     public function fizzBuzz(int $begin, int $end)
     {
@@ -20,6 +22,6 @@ class FizzBuzzClass
                 echo "$i ";
             }
         }
-        echo PHP_EOL;
+        // echo PHP_EOL;
     }
 }

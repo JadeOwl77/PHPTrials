@@ -1,6 +1,8 @@
 <?php
 
-class AddDigitsClass
+namespace Classes\Trials;
+
+class AddDigits
 {
     public function addDigits(string $num): int
     {

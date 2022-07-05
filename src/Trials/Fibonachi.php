@@ -1,6 +1,8 @@
 <?php
 
-class FibonachiClass
+namespace Classes\Trials;
+
+class Fibonachi
 {
     private static $fibonachi = [0, 1];
     public function fib(int $n): int

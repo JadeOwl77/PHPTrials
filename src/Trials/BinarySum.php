@@ -1,6 +1,8 @@
 <?php
 
-class BinarySumClass
+namespace Classes\Trials;
+
+class BinarySum
 {
     public function binarySum(string $a, string $b): string
     {

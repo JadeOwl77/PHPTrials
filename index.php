@@ -8,14 +8,14 @@ include_once ".\\src\\perfectClass.php";
 include_once ".\\src\\powerOfThreeClass.php";
 include_once ".\\src\\ticketClass.php";
 
-$addDigits = new addDigitsClass();
-$binarySum = new binarySumClass();
-$brackets = new bracketsClass();
-$fibonachi = new fibonachiClass();
-$fizzbuzz = new fizzBuzzClass();
-$perfect = new perfectClass();
-$power = new powerOfThreeClass();
-$ticket = new ticketClass();
+$addDigits = new AddDigitsClass();
+$binarySum = new BinarySumClass();
+$brackets = new BracketsClass();
+$fibonachi = new FibonachiClass();
+$fizzbuzz = new FizzBuzzClass();
+$perfect = new PerfectClass();
+$power = new PowerOfThreeClass();
+$ticket = new TicketClass();
 
 // Tests AddDigits
 echo PHP_EOL, "Add Digits Trial", PHP_EOL, "-------------------------------------", PHP_EOL; 

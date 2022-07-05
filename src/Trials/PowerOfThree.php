@@ -1,6 +1,8 @@
 <?php
 
-class PowerOfThreeClass
+namespace Classes\Trials;
+
+class PowerOfThree
 {
     public function isPowerOfThree(int $num): bool
     {

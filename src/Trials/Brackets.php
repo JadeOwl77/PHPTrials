@@ -1,6 +1,8 @@
 <?php
 
-class BracketsClass
+namespace Classes\Trials;
+
+class Brackets
 {
     public function isBalanced(string $str): bool
     {
